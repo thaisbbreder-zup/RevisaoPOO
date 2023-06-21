@@ -6,14 +6,6 @@ public class Livros {
     private String genero;
     private String autor;
 
-    public Livros() {
-        this.isbn = 0;
-        this.nomeDoLivro = "";
-        this.genero = "";
-        this.autor = "";
-    }
-
-    //modificadorDeAcesso tipoDeRetorno nomeDoMetodo(Paramentros)
     //construtores que recebem os parâmetros de acordo com o enunciado do exercício
     public Livros(int isbn) {
         this.isbn = isbn;
