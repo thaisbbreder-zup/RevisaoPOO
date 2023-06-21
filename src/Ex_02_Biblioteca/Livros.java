@@ -7,21 +7,6 @@ public class Livros {
     private String autor;
 
     //construtores que recebem os parâmetros de acordo com o enunciado do exercício
-    public Livros(int isbn) {
-        this.isbn = isbn;
-    }
-
-    public Livros(int isbn, String nomeDoLivro) {
-        this.isbn = isbn;
-        this.nomeDoLivro = nomeDoLivro;
-    }
-
-    public Livros(int isbn, String nomeDoLivro, String genero) {
-        this.isbn = isbn;
-        this.nomeDoLivro = nomeDoLivro;
-        this.genero = genero;
-    }
-
     public Livros(int isbn, String nomeDoLivro, String genero, String autor) {
         this.isbn = isbn;
         this.nomeDoLivro = nomeDoLivro;
@@ -31,19 +16,19 @@ public class Livros {
 
     //métodos "registrarLivro" que recebem os parâmetros e imprimem a mensagem de registro
     public void registrarLivro(int isbn) {
-        System.out.println("O livro foi registrado com o ISBN " + isbn);
+        System.out.println("O livro foi registrado com o ISBN " + isbn + "." );
     }
 
     public void registrarLivro(int isbn, String nomeDoLivro) {
-        System.out.println("O livro " + nomeDoLivro + " foi registrado com o ISBN  " + isbn);
+        System.out.println("O livro " + "'" + nomeDoLivro + "'" + " foi registrado com o ISBN " + isbn + "." );
     }
 
     public void registrarLivro(int isbn, String nomeDoLivro, String genero) {
-        System.out.println("O livro " + nomeDoLivro + " foi registrado com o ISBN " + isbn + " e o gênero " + genero);
+        System.out.println("O livro " + "'" + nomeDoLivro + "'" + " foi registrado com o ISBN " + isbn + " e o gênero " + genero + "." );
     }
 
     public void registrarLivro(int isbn, String nomeDoLivro, String genero, String autor) {
-        System.out.println("O livro " + nomeDoLivro + " do autor " + autor + " foi registrado com o ISBN " + isbn + " e o gênero " + genero);
+        System.out.println("O livro " + "'" + nomeDoLivro + "'" +" do autor " + autor + " foi registrado com o ISBN " + isbn + " e o gênero " + genero + ".");
     }
 
     //metodos getter que retornam as informações referentes ao livro
@@ -63,6 +48,12 @@ public class Livros {
         return autor;
     }
 
+    public void exibirInformacoes() {
+        System.out.println("Livro: " + nomeDoLivro);
+        System.out.println("ISBN: " + isbn);
+        System.out.println("Gênero: " + genero);
+        System.out.println("Autor: " + autor);
+    }
 }
 
 
