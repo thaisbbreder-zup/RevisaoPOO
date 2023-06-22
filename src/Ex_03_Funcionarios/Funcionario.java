@@ -8,31 +8,12 @@ public class Funcionario {
     private int identificador;
     private static int contadorIdentificador = 1;
 
-    public Funcionario(String nome, LocalDate dataAdmissao, double salario) {
-        this.nome = nome;
-        this.dataAdmissao = dataAdmissao;
-        this.salario = salario;
-        this.identificador = contadorIdentificador++;
-    }
-
     public Funcionario() {
         this.identificador = contadorIdentificador++;
     }
 
     public int getIdentificador() {
         return identificador;
-    }
-
-    public void setIdentificador(int identificador) {
-        this.identificador = identificador;
-    }
-
-    public static int getContadorIdentificador() {
-        return contadorIdentificador;
-    }
-
-    public static void setContadorIdentificador(int contadorIdentificador) {
-        Funcionario.contadorIdentificador = contadorIdentificador;
     }
 
     public String getNome() {
