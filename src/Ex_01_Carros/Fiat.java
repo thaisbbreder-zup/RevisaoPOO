@@ -4,7 +4,6 @@ public class Fiat extends Carros {
 
     public Fiat(String marca, int ano, double valor, String cor, int portas) {
         super(marca, ano, valor, cor, portas);
-
     }
 
     @Override
